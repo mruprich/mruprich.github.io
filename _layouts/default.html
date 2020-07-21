@@ -14,15 +14,37 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<!-- Main container that will be the same for all pages -->
 	<div class="container" id="wrapper">
+		<div class="row header_empty_row"></div>
 		<div class="row" id="main_header">
-			<div class="col-4" id="main_header_logo">
-				This will be a logo
+			<div class="col-2" id="main_header_logo">
+				Logo
 			</div>
-			<div class="col-8" id="main_header_nav">
-				This will be a nav
+			<div class="col-3" id="main_title">
+				<p>
+				<b>Dětská duše</b><br>
+				Dětské oddělení<br>
+				psychiatrické nemocnice<br>
+				Havlíčkův Brod<br>
+				</p>
+			</div>
+			<div class="col-7" id="main_header_nav">
+				<nav>
+					<a href="team.html">náš tým</a>
+					<a href="gallery.html">galerie</a>
+					<a href="faq.html">otázky a odpovědi</a>
+					<a href="contacts.html">kontakt</a>
+					<a href="sponsorship.html">sponzoring</a>
+				</nav>
 			</div>
 		</div>
-	    {{ content }}
+		<div class="row header_empty_row"></div>
+
+		<div class="row" id="main_content">
+			{{ content }}
+		</div>
+
+	   <div class="row" id="footer">
+	   </div>
 	</div>
   </body>
 </html>

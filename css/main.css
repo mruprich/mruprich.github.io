@@ -1,17 +1,53 @@
+nav a {
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.39;
+	letter-spacing: normal;
+	color: #2b292d;
+	text-decoration: none;
+}
+
+.header_empty_row {
+	height: 46px;
+	#border: 1px solid green;
+	background-color: rgba(255, 104, 107, 0.8);
+}
+
 #main_header {
-  width: 1400px;
-  height: 190px;
-  background-color: rgba(255, 104, 107, 0.8);
-  border: 1px black solid;
+	max-width: 1400px;
+	height: 100px;
+	background-color: rgba(255, 104, 107, 0.8);
+	#border: 1px black solid;
+}
+
+#main_title {
+	width: 237px;
+
+}
+
+#main_title p {
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.39;
+	letter-spacing: normal;
+	color: rgba(0, 0, 0, 0.6);
 }
 
 #main_header_logo {
-  border: 1px red solid;
-
-
+	#border: 1px red solid;
+	height: 100px;
 }
 
 #main_header_nav {
-  border: 1px blue solid;
+  #border: 1px blue solid;
+}
 
+#footer {
+	height: 256px;
+	max-width: 1400px;
+	background-color: #9fbfff;
 }
