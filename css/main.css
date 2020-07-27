@@ -1,5 +1,9 @@
 ---
 ---
+.container-fluid {
+	max-width: 1400px;
+}
+
 
 nav a {
 	font-family: Roboto;
@@ -41,8 +45,15 @@ nav a {
 }
 
 #main_header_logo {
-	#border: 1px red solid;
-	height: 100px;
+	border: 9px #3142c6 solid;
+	background-color: #9fbfff;
+	height: 43px;
+	width: 45px;
+	-moz-border-radius: 49px;
+	-webkit-border-radius: 49px;
+	border-radius: 49px;
+	position: relative;
+	float:right;
 }
 
 #main_header_nav {
@@ -55,6 +66,7 @@ nav a {
 	#background-color: #9fbfff;
 	background-image: url('{{ site.baseurl }}/images/vlnkasvg.svg');
 	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 .footer_elements {
