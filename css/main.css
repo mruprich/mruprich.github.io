@@ -1,3 +1,6 @@
+---
+---
+
 nav a {
 	font-family: Roboto;
 	font-size: 18px;
@@ -49,5 +52,54 @@ nav a {
 #footer {
 	height: 256px;
 	max-width: 1400px;
-	background-color: #9fbfff;
+	#background-color: #9fbfff;
+	background-image: url('{{ site.baseurl }}/images/vlnkasvg.svg');
+	background-repeat: no-repeat;
+}
+
+.footer_elements {
+	margin-top: 100px;
+	height: 100px;
+}
+
+.orange_fish {
+	background-image: url('{{ site.baseurl }}/images/Fish2x.svg');
+	background-size: 100% 100%;
+}
+
+#blue_fish {
+	height: 100px;
+	#width: 120px;
+	background-image: url('{{ site.baseurl }}/images/ryba.svg');
+	background-size: 100% 100%;
+}
+
+#footer_text {
+	text-align: center;
+	padding-top: 50px;
+}
+
+#footer_text p {
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: 1.3;
+	color: #ffffff;
+}
+
+#first_fish {
+	height: 30px;
+	margin-left: -80px;
+}
+
+#second_fish {
+	height: 40px;
+	margin-top: 150px;
+}
+
+#third_fish {
+	height: 20px;
+	margin-top: 190px;
+	margin-left: 20px;
 }

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="30px" viewBox="0 0 43 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Fish@2x</title>
+    <defs>
+        <linearGradient x1="10.1370652%" y1="66.7372614%" x2="36.2790865%" y2="46.6508098%" id="linearGradient-1">
+            <stop stop-color="#FAD961" offset="0%"></stop>
+            <stop stop-color="#F76B1C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="6.99926967%" y1="38.06748%" x2="24.4947695%" y2="52.2172918%" id="linearGradient-2">
+            <stop stop-color="#FAD961" offset="0%"></stop>
+            <stop stop-color="#F76B1C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="45.0023726%" y1="34.6645699%" x2="61.8359904%" y2="68.918921%" id="linearGradient-3">
+            <stop stop-color="#FAD961" offset="0%"></stop>
+            <stop stop-color="#F76B1C" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0.423646715,12.6797443 C3.35295674,9.9260915 5.33757003,7.92638902 6.37748657,6.68063689 C7.93736139,4.81200869 13.5026721,0.162188657 19.3527369,0.653647318 C25.2028016,1.14510598 26.3563305,1.83718844 28.9541997,3.66892558 C31.552069,5.50066271 30.8361973,8.15423736 35.3225427,10.4169908 C39.808888,12.6797443 38.7923514,15.0684935 38.2704565,15.6521689 C37.7485617,16.2358442 33.2654417,22.9049274 24.6030659,24.9173602 C15.9406901,26.9297929 9.43678879,24.7839115 4.08299525,18.7318279 C2.06672135,16.5416624 0.852513401,16.0315131 0.260237921,14.5829846 C-0.134612399,13.6172989 -0.0801428008,12.9828855 0.423646715,12.6797443 Z" id="path-4"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FCB653" offset="0%"></stop>
+            <stop stop-color="#DB6512" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-7">
+            <stop stop-color="#FCB653" offset="0%"></stop>
+            <stop stop-color="#DB6512" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-8">
+            <stop stop-color="#FAD961" offset="0%"></stop>
+            <stop stop-color="#F76B1C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="idea1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="detskaduse_otazky" transform="translate(-1033.000000, -905.000000)">
+            <g id="Group-4" transform="translate(-155.000000, 759.000000)">
+                <g id="Fish" transform="translate(1209.500000, 161.000000) scale(-1, 1) translate(-1209.500000, -161.000000) translate(1188.000000, 146.000000)">
+                    <g id="Group-34" transform="translate(0.000000, 0.000000)">
+                        <g id="Group-32">
+                            <path d="M7.09122751,20.020635 L7.35526662,25.6002438 C7.42992636,28.2351787 9.25440159,29.5526461 12.8286923,29.5526461 C18.1901284,29.5526461 26.8457328,27.8739218 28.1661064,26.5156766 C29.0463554,25.6101797 22.0213958,23.4451659 7.09122751,20.020635 Z" id="Path-47-Copy" fill="url(#linearGradient-1)"></path>
+                            <path d="M7.35526662,12.073272 C7.35526662,7.54196444 7.35526662,4.83851134 7.35526662,3.9629127 C7.35526662,2.64951474 8.94341824,0 13.3471562,0 C17.7508941,0 25.5435197,0.513627946 31.0340376,5.03996345 C34.6943829,8.05752046 28.648546,9.83784463 12.896527,10.380936 L7.35526662,12.073272 Z" id="Path-45-Copy" fill="url(#linearGradient-2)"></path>
+                            <g id="Path-48" transform="translate(3.390882, 2.032018)">
+                                <mask id="mask-5" fill="white">
+                                    <use xlink:href="#path-4"></use>
+                                </mask>
+                                <use id="Mask" fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+                                <path d="M11.1091183,24.580885 C14.8996947,20.030718 16.6371251,16.2152417 16.3214094,13.1344561 C15.8478358,8.51327781 14.7356113,3.60769997 11.1091183,-0.967741935" stroke="url(#linearGradient-6)" stroke-width="3.69767442" opacity="0.7" mask="url(#mask-5)"></path>
+                                <path d="M3.60911831,24.580885 C7.39969472,20.030718 9.13712507,16.2152417 8.82140935,13.1344561 C8.34783578,8.51327781 7.2356113,3.60769997 3.60911831,-0.967741935" id="Path-48-Copy" stroke="url(#linearGradient-6)" stroke-width="3.69767442" opacity="0.8" mask="url(#mask-5)"></path>
+                                <path d="M16.6091183,27.9679818 C21.8449689,21.1597502 24.3050363,16.2152417 23.9893206,13.1344561 C23.515747,8.51327781 22.4035226,3.60769997 18.7770296,-0.967741935" id="Path-48-Copy-2" stroke="url(#linearGradient-7)" stroke-width="3.69767442" opacity="0.5" mask="url(#mask-5)"></path>
+                                <path d="M23.6091183,27.9679818 C28.8449689,21.1597502 31.3050363,16.2152417 30.9893206,13.1344561 C30.515747,8.51327781 29.4035226,3.60769997 25.7770296,-0.967741935" id="Path-48-Copy-3" stroke="url(#linearGradient-7)" stroke-width="3.69767442" opacity="0.3" mask="url(#mask-5)"></path>
+                            </g>
+                            <ellipse id="Oval" fill="#433730" cx="33" cy="12.5806452" rx="1" ry="1"></ellipse>
+                            <path d="M5.81109184,13.9013332 C3.89427117,11.5477394 2.53627096,10.2157572 1.73709123,9.90538645 C0.538321622,9.43983036 0.00116316353,9.05129261 0.00116316353,11.4297294 C0.00116316353,13.015354 0.00116316353,16.2780372 0.00116316353,21.2177792 C-0.0295790839,22.5961836 0.549063604,22.87577 1.73709123,22.0565383 C3.51913266,20.8276908 5.81109184,18.7798987 5.81109184,18.335191 C5.81109184,18.0387191 5.81109184,16.5607666 5.81109184,13.9013332 Z" id="Path-46-Copy" fill="url(#linearGradient-8)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
