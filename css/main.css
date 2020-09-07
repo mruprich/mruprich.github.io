@@ -4,6 +4,14 @@
 	max-width: 1400px;
 }
 
+.h1_centre {
+	text-align: center;
+}
+
+.text_centre {
+	text-align: center;
+
+}
 
 nav a {
 	font-family: Roboto;
@@ -131,6 +139,16 @@ nav a {
 
 #news {
 	height: 500px;
+	border: 1px black solid;
+}
+
+.news_item {
+	height: 100%;
+	margin: 0 20px 0 20px;
+}
+
+.news_row {
+	height: 80%;
 }
 
 #psychiatry {
@@ -139,8 +157,24 @@ nav a {
 	background-color: rgba(226, 160, 255, 0.3);
 }
 
+.psychiatry_row {
+	height: 300px;
+}
+
+.psychiatry_item {
+	margin: 0 20px 0 20px;
+}
+
 #contacts {
 	max-width: 1400px;
 	height: 500px;
 	
+}
+
+.contacts_row {
+	height: 50%;
+}
+
+.email_row {
+	height: 30%;
 }
