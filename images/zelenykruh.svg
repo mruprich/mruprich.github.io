@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <g id="idea1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="detskaduse_landingpage" transform="translate(-787.000000, -2139.000000)">
+            <g id="Categories" transform="translate(131.000000, 2068.000000)">
+                <g id="Group-2" transform="translate(656.000000, 71.000000)">
+                    <circle id="Oval-Copy-2" fill="#E1FFF2" cx="60" cy="60" r="60"></circle>
+                    <g id="shape-polygon-2" transform="translate(33.000000, 33.000000)" fill="#87EABE">
+                        <path d="M29.62856,0.520782609 C28.7737309,-0.174384779 27.5439491,-0.174384779 26.68912,0.520782609 L1.16912,21.259913 C0.423644157,21.8659504 0.13279304,22.8665147 0.43832,23.7739565 L9.71832,51.4261304 C10.0348107,52.3666445 10.9216062,53.0005696 11.92,53.0000004 L44.4,53.0000004 C45.3990092,53.0000004 46.2859931,52.3652507 46.60168,51.4238261 L55.88168,23.7716522 C56.187207,22.8642103 55.8963558,21.8636461 55.15088,21.2576087 L29.62856,0.520782609 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
