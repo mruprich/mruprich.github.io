@@ -175,6 +175,10 @@ nav a {
 	height: 50%;
 }
 
+.text_left {
+	text-align: left;
+}
+
 .email_row {
 	height: 30%;
 }
