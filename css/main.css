@@ -1,5 +1,9 @@
 ---
 ---
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
 .container-fluid {
 	max-width: 1400px;
 }
@@ -14,7 +18,6 @@
 }
 
 nav a {
-	font-family: Roboto;
 	font-size: 18px;
 	font-weight: normal;
 	font-style: normal;
@@ -101,7 +104,6 @@ nav a {
 }
 
 #footer_text p {
-	font-family: Roboto;
 	font-size: 20px;
 	font-weight: bold;
 	font-style: normal;
@@ -139,30 +141,82 @@ nav a {
 
 #news {
 	height: 500px;
-	border: 1px black solid;
 }
 
 .news_item {
 	height: 100%;
 	margin: 0 20px 0 20px;
+	background-size: 70% 70%;
+	background-repeat: no-repeat;
+	background-position: center top;
 }
 
 .news_row {
 	height: 80%;
 }
 
+#news_item1 {
+	background-image: url('{{ site.baseurl }}/images/zelena.svg');
+}
+
+#news_item2 {
+	background-image: url('{{ site.baseurl }}/images/modra.svg');
+	border-radius: 8px;
+	box-shadow: 0 11px 55px 10px rgba(0, 0, 0, 0.07), 0 13px 18px -8px rgba(0, 0, 0, 0.15);
+}
+
+#news_item3 {
+	background-image: url('{{ site.baseurl }}/images/fialova.svg');
+}
+
 #psychiatry {
  	max-width: 1400px;
-	height: 1045px;
+	height: 845px;
 	background-color: rgba(226, 160, 255, 0.3);
 }
 
+#psychiatry p {
+	font-size: 24px;
+	line-height: 34px;
+	letter-spacing: 0;
+}
+
 .psychiatry_row {
-	height: 300px;
+	height: 350px;
 }
 
 .psychiatry_item {
-	margin: 0 20px 0 20px;
+	margin: 30px 20px 0 20px;
+	font-size: 22px;
+	line-height: 28px;
+	letter-spacing: 0;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#problems {
+	background-image: url('{{ site.baseurl }}/images/ouch.svg');
+	background-color: white;
+}
+
+#psychotherapy {
+	background-image: url('{{ site.baseurl }}/images/ruzova.svg');
+	background-color: #3141c5;
+	color: white;
+}
+
+#medication {
+	background-image: url('{{ site.baseurl }}/images/zelenykruh.svg');
+	background-color: white;
+}
+
+#links {
+	background-image: url('{{ site.baseurl }}/images/nebe.svg');
+	background-color: white;
 }
 
 #contacts {
