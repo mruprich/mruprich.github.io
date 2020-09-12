@@ -4,6 +4,10 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+body a {
+	font-family: 'Roboto', sans-serif;
+}
+
 .container-fluid {
 	max-width: 1400px;
 }
@@ -21,22 +25,39 @@ nav a {
 	font-size: 18px;
 	font-weight: normal;
 	font-style: normal;
-	line-height: 1.39;
-	letter-spacing: normal;
+	line-height: 25px;
+	letter-spacing: 0;
 	color: #2b292d;
 	text-decoration: none;
+	margin-left: 40px;
+	padding-left: 4px;
+}
+
+nav a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+nav a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+nav a.active {
+	background: linear-gradient(180deg, rgba(255,104,107,0.8) 50%,  #9fbfff 50%);
+	font-weight: bold;
 }
 
 .header_empty_row {
 	height: 46px;
 	#border: 1px solid green;
-	background-color: rgba(255, 104, 107, 0.8);
+	background-color: rgba(255, 104, 107, 1);
 }
 
 #main_header {
 	max-width: 1400px;
 	height: 100px;
-	background-color: rgba(255, 104, 107, 0.8);
+	background-color: rgba(255, 104, 107, 1);
 	#border: 1px black solid;
 }
 
@@ -69,8 +90,11 @@ nav a {
 }
 
 #main_header_nav {
-  #border: 1px blue solid;
+  border: 1px blue solid;
+  display: flex;
+  justify-content: flex-end;
 }
+
 
 #footer {
 	height: 256px;

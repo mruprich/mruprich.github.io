@@ -20,7 +20,7 @@
 			<div class="col-1">
 				<div id="main_header_logo"></div>
 			</div>
-			<div class="col-5" id="main_title">
+			<div class="col-4" id="main_title">
 				<p>
 				<b>Dětská duše</b><br>
 				Dětské oddělení<br>
@@ -28,13 +28,16 @@
 				Havlíčkův Brod<br>
 				</p>
 			</div>
-			<div class="col-5" id="main_header_nav">
+			<div class="col-6 .top_menu" id="main_header_nav">
 				<nav>
-					<a href="team.html">náš tým</a>
-					<a href="gallery.html">galerie</a>
-					<a href="faq.html">otázky a odpovědi</a>
-					<a href="contacts.html">kontakt</a>
-					<a href="sponsorship.html">sponzoring</a>
+					{% assign links = site.data.navigation %}
+					{% for link in links %}
+						{% assign class = nil %}
+						{% if page.url contains link.url %}
+							{% assign class = 'active' %}
+						{% endif %}
+							<a href="{{ site.url }}{{ link.url }}" class="{{ class }}"> {{link.title}} </a>
+					{% endfor %}
 				</nav>
 			</div>
 			<div class="col-1"></div>
