@@ -90,7 +90,7 @@ nav a.active {
 }
 
 #main_header_nav {
-  border: 1px blue solid;
+  #border: 1px blue solid;
   display: flex;
   justify-content: flex-end;
 }
