@@ -294,11 +294,41 @@ nav a.active {
 #contacts {
 	max-width: 1400px;
 	height: 500px;
-	
+	padding-top: 50px;
+	font-family: Roboto;
+	font-size: 24px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.42;
+	letter-spacing: normal;
+}
+
+#contacts h2 {
+	padding: 0;
+	font-family: Roboto;
+	font-size: 24px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: 1.42;
+	letter-spacing: normal;
 }
 
 .contacts_row {
 	height: 50%;
+	padding-top: 50px;
+}
+
+#contacts_center {
+	padding-left: 0px;
+}
+
+.contacts_header {
+	font-family: Roboto;
+	font-size: 56px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: 1;
+	letter-spacing: -0.5px;
 }
 
 .text_left {
