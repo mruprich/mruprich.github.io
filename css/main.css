@@ -8,6 +8,17 @@ body a {
 	font-family: 'Roboto', sans-serif;
 }
 
+body p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+}
+
+body h1 {
+	font-family: Roboto;
+	font-size: 56px;
+	font-weight: bold;
+}
+
 .container-fluid {
 	max-width: 1400px;
 }
@@ -29,7 +40,7 @@ nav a {
 	letter-spacing: 0;
 	color: #2b292d;
 	text-decoration: none;
-	margin-left: 40px;
+	margin-left: 30px;
 	padding-left: 4px;
 }
 
@@ -52,6 +63,10 @@ nav a.active {
 	height: 46px;
 	#border: 1px solid green;
 	background-color: rgba(255, 104, 107, 1);
+}
+
+.page_header {
+	padding-top: 40px;
 }
 
 #main_header {
@@ -85,8 +100,8 @@ nav a.active {
 	-moz-border-radius: 49px;
 	-webkit-border-radius: 49px;
 	border-radius: 49px;
-	position: relative;
-	float:right;
+	#position: relative;
+	float:left;
 }
 
 #main_header_nav {
@@ -337,4 +352,39 @@ nav a.active {
 
 .email_row {
 	height: 30%;
+}
+
+.team_members_row {
+	margin-top: 50px;
+}
+
+.team_member_box{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: space-between;
+	align-items: center;
+}
+
+.team_img {
+	border-radius: 50%;
+	width: 183px;
+	height: 183px;
+	object-fit: cover;
+}
+
+.team_member_name_div {
+	height: 25%;
+}
+
+.team_member_name {
+	font-size: 20px;
+	color: #535b6c;
+	padding: 0 10px 0 10px;
+	flex-basis: 50%;
+}
+
+.team_member_position {
+	color: #9299a5;
+	font-size: 14px;
 }

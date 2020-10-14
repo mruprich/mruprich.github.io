@@ -2,4 +2,61 @@
 layout: default
 title: Home
 ---
-<h1>Náš tým</h1>
+<div class="col-12">
+	<div class="row">
+		<div class="col-1"></div>
+		<div class="col-7">
+			<div class="row page_header">
+				<h1>Náš tým</h1>
+			</div>
+			<div class="row">
+				<p>Nemáme patent na nejlepší výchovu ani zázračný lék na všechny neduhy. Máme něco mnohem cennějšího. Přesně 39 lidí.
+				Společně zde vytváříme bezpečné a laskavé prostředí, kde se děti učí fungovat tak, aby nás vlastně nepotřebovaly.</p>
+		
+				<p>Léčebný tým tvoří primář oddělení, 4 lékaři, 4 psychologové, sociální pracovnice, logopedka, 16 zdravotních sester, 3 ošetřovatelky a 2 ergoterapeutky. 
+				Učitelský tým zahrnuje 6 pedagožek.</p>
+			</div>
+		</div>
+	</div>
+	<div class="row team_members_row">
+		{% assign team_members = site.data.team %}
+		{% for team_member in team_members) %}
+			{% assign loop_count = forloop.index | modulo: 4 %}
+			{% if loop_count == 1 %}
+				<div class="col-2"></div>
+				<div class="col-2 text-center team_member_box">
+					<div class="team_member_name_div">
+						<p class="team_member_name">{{ team_member.name }}</p>
+					</div>
+					<div>
+						<img src="{{ team_member.picture }}" alt="" class="team_img">
+					</div>
+					<p class="team_member_position">{{ team_member.position }}</p>
+				</div>
+			{% elsif loop_count == 0 %}
+				<div class="col-2 text-center team_member_box">
+					<div class="team_member_name_div">
+						<p class="team_member_name">{{ team_member.name }}
+					</div>
+					<div>
+						<img src="{{ team_member.picture }}" alt="" class="team_img align-middle">
+					</div>
+					<p class="team_member_position">{{ team_member.position }}</p>
+				</div>	
+				<div class="col-2"></div>
+			{% else %}
+				<div class="col-2 text-center team_member_box">
+					<div class="team_member_name_div">
+						<p class="team_member_name">{{ team_member.name }}
+					</div>
+					<div>
+						<img src="{{ team_member.picture }}" alt="" class="team_img align-middle">
+					</div>
+					<div>
+						<p class="team_member_position">{{ team_member.position }}</p>
+					</div>
+				</div>	
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>

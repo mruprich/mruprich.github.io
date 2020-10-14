@@ -17,31 +17,37 @@
 	<div class="container-fluid" id="wrapper">
 		<div class="row header_empty_row"></div>
 		<div class="row" id="main_header">
-			<div class="col-1">
-				<a href="index.html"><div id="main_header_logo"></div></a>
-			</div>
-			<div class="col-4" id="main_title">
-				<p>
-				<b>Dětská duše</b><br>
-				Dětské oddělení<br>
-				psychiatrické nemocnice<br>
-				Havlíčkův Brod<br>
-				</p>
-			</div>
-			<div class="col-6 .top_menu" id="main_header_nav">
-				<nav>
-					{% assign links = site.data.navigation %}
-					{% for link in links %}
-						{% assign class = nil %}
-						{% if page.url contains link.url %}
-							{% assign class = 'active' %}
-						{% endif %}
-							<a href="{{ site.url }}{{ link.url }}" class="{{ class }}"> {{link.title}} </a>
-					{% endfor %}
-				</nav>
+			<div class="col-1"></div>
+			<div class="col-10">
+				<div class="row">
+					<div class="col-1">
+						<a href="index.html"><div id="main_header_logo"></div></a>
+					</div>
+					<div class="col-4" id="main_title">
+						<p>
+						<b>Dětská duše</b><br>
+						Dětské oddělení<br>
+						psychiatrické nemocnice<br>
+						Havlíčkův Brod<br>
+						</p>
+					</div>
+					<div class="col-7 .top_menu" id="main_header_nav">
+						<nav>
+							{% assign links = site.data.navigation %}
+							{% for link in links %}
+								{% assign class = nil %}
+								{% if page.url contains link.url %}
+									{% assign class = 'active' %}
+								{% endif %}
+									<a href="{{ site.url }}{{ link.url }}" class="{{ class }}"> {{link.title}} </a>
+							{% endfor %}
+						</nav>
+					</div>
+					
+				</div>
 			</div>
 			<div class="col-1"></div>
-		</div>
+		</div>			
 		<div class="row header_empty_row"></div>
 
 		<div class="row" id="main_content">
