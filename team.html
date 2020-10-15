@@ -18,11 +18,12 @@ title: Home
 			</div>
 		</div>
 	</div>
-	<div class="row team_members_row">
+	
 		{% assign team_members = site.data.team %}
 		{% for team_member in team_members) %}
 			{% assign loop_count = forloop.index | modulo: 4 %}
 			{% if loop_count == 1 %}
+			<div class="row team_members_row">
 				<div class="col-2"></div>
 				<div class="col-2 text-center team_member_box">
 					<div class="team_member_name_div">
@@ -42,8 +43,9 @@ title: Home
 						<img src="{{ team_member.picture }}" alt="" class="team_img align-middle">
 					</div>
 					<p class="team_member_position">{{ team_member.position }}</p>
-				</div>	
+				</div>
 				<div class="col-2"></div>
+			</div>
 			{% else %}
 				<div class="col-2 text-center team_member_box">
 					<div class="team_member_name_div">
@@ -55,8 +57,11 @@ title: Home
 					<div>
 						<p class="team_member_position">{{ team_member.position }}</p>
 					</div>
-				</div>	
+				</div>
 			{% endif %}
 		{% endfor %}
-	</div>
+		{{% if loop_count != 0 %}}
+		</div>
+		{{% endif %}}
+	
 </div>

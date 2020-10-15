@@ -1,12 +1,42 @@
-- name: MUDr. Tomas Havelka
-  position: lekar, primar oddeleni
-  picture: /team_pictures/tomas_havelka.JPG
-- name: Jana Vencova DiS.
-  position: stanicni sestra
-  picture: /team_pictures/jana_vencova.JPG
-- name: MUDr. Marie Tomkova 
-  position: lekar
-  picture: /team_pictures/marie_tomkova.JPG
-- name: MUDr. Tatiana Madlenakova
-  position: lekar
-  picture: /team_pictures/tatiana_madlenakova.JPG
+- name: MUDr. Tomáš Havelka
+  position: lékař, primář oddělení
+  picture: /team_pictures/tomas_havelka.jpg
+- name: Jana Vencová DiS.
+  position: staniční sestra
+  picture: /team_pictures/jana_vencova.jpg
+- name: MUDr. Marie Tomková 
+  position: lékař
+  picture: /team_pictures/marie_tomkova.jpg
+- name: MUDr. Tatiana Madleňáková
+  position: lékař
+  picture: /team_pictures/tatiana_madlenakova.jpg
+- name: MUDr. Marie Rafajová
+  position: lékař
+  picture: /team_pictures/marie_rafajova.jpg
+- name: MUDr. Zuzana Žabokrtská Frydrychová
+  position: lékař
+  picture: /team_pictures/zuzana_frydrychova.jpg
+- name: MUDr. František Čihák
+  position: ambulantní lékař
+  picture: /team_pictures/frantisek_cihak.jpg
+- name: Mgr. Dana Havelková
+  position: psycholog
+  picture: /team_pictures/dana_havelkova.jpg
+- name: Mgr. Václav Dohnal
+  position: psycholog
+  picture: /team_pictures/vaclav_dohnal.jpg
+- name: Mgr. Markéta Lošťáková
+  position: psycholog
+  picture: /team_pictures/marketa_lostakova.jpg
+- name: Mgr. Eliška Pavlíková
+  position: psycholog
+  picture: /team_pictures/eliska_pavlikova.png
+- name: Ester Horská
+  position: sociální pracovnice
+  picture: /team_pictures/ester_horska.jpg
+- name: Martina Novotná, Ivana Vargová
+  position: pracovní terapeutky
+  picture: /team_pictures/novotna_vargova.jpg
+- name: Mgr. Petra Ferenczová
+  position: logopedka
+  picture: /team_pictures/petra_ferenczova.jpg
