@@ -19,6 +19,12 @@ body h1 {
 	font-weight: bold;
 }
 
+body h3 {
+	font-family: Roboto;
+	font-size: 22px;
+	font-weight: bold;
+}
+
 .container-fluid {
 	max-width: 1400px;
 }
@@ -388,4 +394,13 @@ nav a.active {
 .team_member_position {
 	color: #9299a5;
 	font-size: 14px;
+}
+
+.faq_main_row {
+	min-height: 300px;
+}
+
+#faq_picture{
+	background-image: url('{{ site.baseurl }}/images/house.jpg');
+	background-repeat: no-repeat;
 }
