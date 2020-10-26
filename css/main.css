@@ -404,3 +404,8 @@ nav a.active {
 	background-image: url('{{ site.baseurl }}/images/house.jpg');
 	background-repeat: no-repeat;
 }
+
+.faq_p {
+	text-align: justify;
+	padding-left: 50px;
+}
