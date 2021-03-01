@@ -20,7 +20,7 @@ title: Home
 	</div>
 	
 		{% assign team_members = site.data.team %}
-		{% for team_member in team_members) %}
+		{% for team_member in team_members %}
 			{% assign loop_count = forloop.index | modulo: 4 %}
 			{% if loop_count == 1 %}
 			<div class="row team_members_row">
@@ -60,8 +60,8 @@ title: Home
 				</div>
 			{% endif %}
 		{% endfor %}
-		{{% if loop_count != 0 %}}
+		{% if loop_count != 0 %}
 		</div>
-		{{% endif %}}
+		{% endif %}
 	
 </div>
