@@ -38,6 +38,10 @@ body h3 {
 
 }
 
+.header_left {
+	padding-left: 0px;
+}
+
 nav a {
 	font-size: 18px;
 	font-weight: normal;
