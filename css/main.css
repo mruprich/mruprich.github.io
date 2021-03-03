@@ -25,6 +25,10 @@ body h3 {
 	font-weight: bold;
 }
 
+.underline{
+	text-decoration: underline;
+}
+
 .container-fluid {
 	max-width: 1400px;
 }
@@ -267,7 +271,7 @@ nav a.active {
 
 #psychiatry {
  	max-width: 1400px;
-	height: 845px;
+	min-height: 845px;
 	background-color: rgba(226, 160, 255, 0.3);
 }
 
@@ -275,6 +279,15 @@ nav a.active {
 	font-size: 24px;
 	line-height: 34px;
 	letter-spacing: 0;
+}
+
+#psychiatry a{
+	color: #2b292d;
+	text-decoration: none;
+}
+
+#psychiatry a:hover{
+	color: #9fbfff;
 }
 
 .psychiatry_row {
@@ -295,7 +308,33 @@ nav a.active {
 	background-color: white;
 }
 
+.psychiatry_item_text {
+	margin: 30px 20px 20px 20px;
+	letter-spacing: 0;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: white;
+	display: none;
+}
+
+.psychiatry_item_text_visible {
+	display: inherit;
+}
+
+.psychiatry_item_text p{
+	font-size: 18px;
+}
+
 .psychiatry_item:hover {
+	background-color: #3141c5;
+	color: white;
+}
+
+.psychiatry_item_active {
 	background-color: #3141c5;
 	color: white;
 }
@@ -314,6 +353,15 @@ nav a.active {
 
 #links {
 	background-image: url('{{ site.baseurl }}/images/nebe.svg');	
+}
+
+.psychiatry_links_img {
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	max-width: 100px;
+	max-height: 100px;
+	object-fit: cover;
 }
 
 #contacts {

@@ -27,6 +27,43 @@ title: Home
 		<div class="col-1"></div>
 	</div>
 	
+	<script>
+		$(document).ready(function () {
+			$(".psychiatry_item").click(function () {
+				var id = $(this).attr("id");
+
+				//this is when user clicks on the same button that was previously active
+				if ($(this).hasClass("psychiatry_item_active")) {
+					$(this).toggleClass("psychiatry_item_active");
+					$('#psychiatry_row_'+id).removeClass("psychiatry_text_active");
+					$('#psychiatry_row_'+id).animate({
+						height: 'toggle',
+						display: 'none'
+					});
+				} else {
+					var delay = 0;
+					if ($('.psychiatry_text_active').length > 0)
+						delay = 1000;
+
+					//remove old text
+					$(".psychiatry_text_active").animate({
+						height: 'toggle',
+						display: 'none'
+					}, 1000);
+					$(".psychiatry_item_active").toggleClass("psychiatry_item_active");
+					$(".psychiatry_text_active").removeClass("psychiatry_text_active");
+
+					//new item is active and text visible
+					$(this).toggleClass("psychiatry_item_active");
+					$('#psychiatry_row_'+id).delay(delay).animate({
+						height: 'toggle',
+						display: ''
+					}, 1000);
+					$('#psychiatry_row_'+id).addClass("psychiatry_text_active");
+				}
+			});
+		});
+   </script>
 	<div class="row" id="psychiatry">
 		<div class="col-1"></div>
 		<div class="col-10">
@@ -52,7 +89,332 @@ title: Home
 				<div class="col psychiatry_item text_centre" id="medication">Psychické léky</div>
 				<div class="col psychiatry_item text_centre" id="links">Odkazy</div>
 			</div>
-		</div>
+			<div class="row">
+				<div class="col psychiatry_item_text" id="psychiatry_row_problems" style="display: none;">
+					<p>Zamyšlení se nad psychiatrickými diagnózami...
+					MUDr. Tomáš Havelka, primář dětského oddělení</p>
+
+					<p>Přes tajemno a někdy i strach (a možná právě pro ně),
+					které ve veřejnosti obor psychiatrie vzbuzuje,
+					jsou psychiatrické otázky velmi populárním společenským tématem.
+					Výsledkem toho je, že některé termíny ve společnosti natolik zlidověly,
+					nebo až zvulgarizovaly, že je psychiatrie musela opustit.
+					A jiné je možná budou následovat.</p>
+
+					<p>Psychiatrie dětí a mládeže má v tomto svá specifika, avšak principy jsou podobné.
+					Některé typicky dětské diagnozy se dostaly do širšího povědomí a humorně řečeno:
+					„dnes diagnostikuje i paní u výdejního okénka ve školní jídelně“. Proto se dostáváme do situace,
+					kterou trefně popsal guru dětské psychiatrie u nás, profesor Paclt, slovy: „za každým rohem číhá dítě s
+					ADHD a z pod každého stolu vylézá dítě s autismem.“ Ne že by takových dětí bylo tolik,
+					ale je zřejmě uklidňující pojmenovat vše, čemu nerozumíme, co vybočuje z normy, co se nám nelíbí.</p>
+
+					<p>Nemůžeme se tedy divit, že už samotná slova jako diagnoza, duševní nemoc aj.
+					vzbuzují u mnoha lidí nevoli a působí pro ně pejorativně. Vrcholem odporu části společnosti vůči
+					„značkování“ (bohužel včetně odborné psychiatrické diagnostiky) může být např. i následující video.</p>
+
+					<p>Nálepka rozhodně problém nevyřeší a je pro dítě větší zátěží než pomocí.
+					Zároveň se však navzdory obecnému povědomí nemůžeme zříci psychiatrických diagnoz,
+					protože ty jako nálepky vytvářeny nebyly. Jsou to naše mapy a přestože souhlasíme s
+					výrokem G. Batesona (zakladatele rodinné terapie), že „mapa není totéž co krajina“,
+					jsou pro nás ty mapy – nebo jinak soubory příznaků – důležité k odhalení problému a
+					tím pádem schopnosti jej řešit.</p>
+
+					<p>Přijměte tedy naše pozvání a pojďte si o těch „mapách“ povídat.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col psychiatry_item_text" id="psychiatry_row_psychotherapy">
+					<p>O tom, co je psychoterapie, mluvilo již mnoho povolanějších lidí přede mnou,
+					koneckonců stačí si toto slovo "vygůglit" a získáte hrubou představu, o čem je řeč.
+					Já bych se chtěla podělit o svoje myšlenky, proč může být psychoterapie
+					nezapomenutelnou zkušeností do života.</p>
+
+					<p>Často se setkávám s názorem, že ten, kdo chodí k psychologovi/psychiatrovi,
+					na tom musí být asi hodně špatně.
+					Možná je dokonce blázen nebo aspoň slaboch, který si neumí sám vyřešit svoje problémy.
+					Vždy mě k tomu napadne přirovnání, že je to jako byste nešli k zubaři, když vás bolí zub.
+					Rozhodně nikomu nepřijde trapné, že chodíte poctivě na preventivní prohlídky, abyste
+					bolavým zubům třeba i předešli.
+					Kdekdo vám s chutí povypráví, jak ho trápí rostoucí osmička, ale už se neodváží podělit o to,
+					že je poslední dobou smutný, že si nerozumí s partnerem... Proč je tolik jiné vyhledání pomoci,
+					když nejde o zuby, ale o naší "duši"?</p>
+
+					<p>Odpověď neznám. Myslím si, že to má co dělat s tím, že taková trápení jsou mnohem osobnější,
+					mají dopad na celkovu životní pohodu a že je možná těžké přiznat si, že něco není v pořádku.
+					Pokud mám však ukázat, proč je dobré vyhledat "zubaře" - psychoterapeuta, měla bych se podělit
+					o svoje chápání psychoterapie.</p>
+
+					<p>Pro mě je psychoterapie prostor, kde se potkává člověk s člověkem.
+					Jeden je v roli toho, kdo chce být vyslyšen - v čemkoliv, a druhý je tam pro něj,
+					aby mu naslouchal. Role odborníka je v takovém případě dost sporná, protože jediným
+					expertem na život je vždy ten, kdo ho žije. V bezpečném prostředí psychoterapie se však
+					mohou postupně otevírat všechny okamžiky ze života, které právě toho člověka dovedly tam,
+					kde je. Když takovému vyprávění naslouchá i někdo další, kdo má nezaujatý postoj
+					(a nějaké ty odborné zkušenosti), může svému společníkovi ukazovat na jiné okamžiky.
+					Pak mohou společně hledat nové cesty, jak jít životem dál s novým porozuměním k sobě i k lidem okolo.</p>
+
+					<p>Dětská psychoterapie má podle mě navíc jednu přidanou hodnotu a jednu obtíž.
+					Pro mě je krásná v tom, že zahrnuje dětský svět, fantazii, hru. Někdy není potřeba řešit žádné problémy,
+					někdy postačí vedle dítěte zkrátka být, naladit se na jeho potřeby a učit se znova pozorovat svět
+					dětskýma očima, hrát si. Obtíž spočívá v tom, že v případě dětí je vždy potřeba počítat i s jeho
+					prostředím. Příběhy, které děti vypráví, se vždy nějak týkají maminky, tatínka či jiných blízkých
+					dospělých. A někdy možná zapomínáme, jak velký vliv na děti máme (nebo to jenom nechceme vidět).
+					Vždy nás mrzí, když se tu setkáme s přístupem, že je k nám dítě posláno jako do jakési opravny.
+					Když se vrátím k podobě se zubařem, je to jako byste poslali souseda, aby si nechal spravit váš
+					bolavý zub. Když jde dítě poprvé k zubaři, potřebuje, aby ho někdo držel za ruku, no ne? Někoho,
+					kdo mu ukáže, že u zubaře se nemusí bát a kdo ho bude učit o zuby pečovat. Proto je v případě
+					dětí tolik důležité setkání s celou rodinou, nebo aspoň blízkou osobou, která se na hledání
+					nových cest bude podílet.</p>
+
+					<p>Tato hledání na našem oddělení zpravidla teprve začínají Proto vás chci závěrem povzbudit,
+					abyste se na psychoterapii zkusili podívat jako na dobrodružné objevování a nebáli se chodit
+					k zubaři, i když to občas bolí.</p>
+
+					<p>Barbora Zemanová (psycholožka)</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col psychiatry_item_text" id="psychiatry_row_medication">
+					<p>Dávat dětem léky nebo nedávat? Toť dilema mnohých rodičů. Na našem oddělení
+					propojujeme přístup lékový i nelékový. Zde si můžete přečíst princip fungování
+					nejčastěji využívaných léčiv.</p>
+
+					<h3>Ritalin</h3>
+					<p>"Dávat dětem léky na psychiku je drzost.
+
+					Dávat jim prášky, které jsou ze stejné skupiny jako třeba pervitin, je nehoráznost nevídaná."</p>
+
+					<p>Ritalin, účinná dávka se nazývá metylfenidát. Řadíme jej do skupiny zvané
+					stimulancia (podle stimulačního účinku na mozek). Do této skupiny kromě
+					jiných léků opravdu patří i některé drogy jako extáze nebo pervitin.
+					V mozku působí na podobné receptory, celkový účinek je však rozdílný
+					(podrobněji níže).</p>
+
+					<p>Ritalin je hlavním lékem v léčbě poruchy pozornosti a aktivity (ADHD).
+					Dalo by se čekat, že dítě, které je hyperaktivní, nepozorné, bude po
+					Ritalinu ještě divočejší – je to přece stimulující lék. Výsledek je
+					ale přesně opačný. Stimulovaný mozek je najednou schopen věnovat pozornost
+					jedné věci. Dítě se může soustředit na běžné aktivity (nejen hraní
+					počítačových her a sledování televize), dokáže odolat v danou chvíli
+					nepodstatným podnětům, přestává být roztěkané. Samo cítí úlevu, odpočinek.
+					Zároveň ale není ospalé.</p>
+
+					<h3>Antidepresiva</h3>
+					<p>
+						Přestože mluvíme o antidepresivech, tedy lécích proti depresi, jsou
+						antidepresiva rozsáhlou skupinou léků, které jsou užívané v mnoha
+						oblastech léčby psychických obtíží. Vedle léčby deprese jsou základními
+						léky u úzkostných poruch, smíšených úzkostně depresivních stavů,
+						obsedantně kompulzivní poruchy. A dále u problémů, kde nemusí být
+						deprese nebo úzkost zjevná (např. mentální anorexie, mentální bulimie,
+						poruchy chování a emocí, autismus).
+					</p>
+
+					<p class="underline">Původní antidepresiva</p>
+					<p class="underline">Antidepresiva 1. generace – tzv. TCA (tricyklická antidepresiva)</p>
+
+					<p>Jsou to nejstarší antidepresiva. Vyznačují se často vysokou účinností
+					(platí pro dospělé, ne vždy u dětí), ale také větším množstvím nežádoucích
+					účinků. Za nejzávažnější z nich považujeme nepříznivý vliv na srdce a oběh
+					(mluvíme o prodloužení srdečního vedení, zrychlení srdeční frekvence,
+					nízkém krevním tlaku) a zvýšené riziko epileptických záchvatů
+					(hlavně pak u dětí léčených pro epilepsii). Z dalších možných
+					nežádoucích účinků je vhodné jmenovat únavu, bolesti břicha,
+					pocit na zvracení, sníženou chuť k jídlu.</p>
+
+					<p>Zejména vzhledem k prvním zmíněným nežádoucím účinkům
+					používáme tato antidepresiva v dětské psychiatrii méně často.
+					Pokud přece, jsou to nejčastěji 2 léky, které u dětí používáme
+					bezpečně po mnoho let.</p>
+
+					<p>
+						<ul>
+							<li>Dosulepin (Prothiaden) – Patří do skupiny sedativních TCA.
+							Velmi vhodný u nespavosti úzkostně depresivního původu.</li>
+							<li>Clomipramin (Anafranil) – Téměř výhradně jej užíváme k léčbě OCD,
+							pokud nezaberou novější antidepresiva. Chápeme jej jako nejúčinnější lék pro OCD.</li>
+						</ul>
+					</p>
+
+					<p class="underline">Novější antidepresiva</p>
+					<p class="underline">Antidepresiva 2. generace</p>
+					<p>Tato rozmanitá skupina léků má menší výskyt nežádoucích účinků než
+					předchozí a pro dětský věk používáme zejména následující lék.</p>
+
+					<p>
+						<ul>
+							<li>Mianserin (Miabene) – Lék, který se velmi osvědčil v malých dávkách při nespavosti.</li>
+						</ul>
+					</p>
+
+					<p class="underline">Antidepresiva 3. generace – tzv. SSRI (selective serotonine reuptake inhibitors)</p>
+
+					<p>Jsou jedněmi z moderních antidepresiv. Jako všechny léky v medicíně mají řadu
+					možných nežádoucích účinků, ale celkově je chápeme jako velmi bezpečné léky.
+					Z nežádoucích účinků stojí za zmínku neklid, nevolnost, bolest hlavy, pocit
+					na zvracení (při opatrném dávkování velmi zřídka, pokud přece, tak většinou
+					odeznívají 2.-3. den po nasazení).</p>
+
+					<p>
+						<ul>
+							<li>Sertralin (Zoloft, Serlift, Sertralin) – V dětské psychiatrii snad
+							nejužívanějíší antidepresivum, je velmi dobře snášené a účinné. Podáváme
+							jej u depresí, úzkostí, OCD a dalších poruch.</li>
+
+							<li>Fluvoxamin (Fevarin) – Opět velmi šetrné antidepresivum, používáme
+							jej ale méně pro nutnost dávkovat 3x denně.</li>
+						</ul>
+					</p>
+
+					<h3>Zlepšení spánku - hypnotika</h3>
+
+					<p>Klasická hypnotika (léky na nespavost) z dospělé psychiatrie jako
+					obecně známé Dormicum, Hypnogen nebo Stilnox v dětské psychiatrii
+					pro možnost rozvoje závislosti téměř neužíváme a uchylujeme se k
+					lékům z jiných skupin, které nebyly původně brány jako hypnotika,
+					ale praxí se v této indikaci osvědčily.</p>
+
+					<ul>
+						<li>Dosulepin (Prothiaden) – Původní antidepresiva</li>
+						<li>Promethazin (Prothazin) – Mírnění úzkosti</li>
+						<li>Mianserin (Miabene) – Novější antidepresiva
+						<li>Melatonin (Agomelatin) – Nejnovější lék pro léčbu nespavosti.
+						Jelikož se jedná o tělu přirozenou látku, udává se, že je melatonin
+						při léčbě velmi šetrný, s minimem nežádoucích účinků. Zatím se
+						dostává do povědomí v dospělé psychiatrii, u dětí a dospívajících
+						zatím nemáme dostatek zkušeností. Budoucnost tohoto léku se ale jeví slibně.</li>
+					</ul>
+
+
+					<h3>Mírnění úzkosti - anxiolytika</h3>
+					<p>Termínem anxiolytika označujeme léky, které užíváme k rychlému a krátkodobému
+					zmírnění úzkosti a jejích projevů (neklid, nespavost, agresivita vůči sobě nebo okolí).
+					Nejčastěji je rozlyšujeme na tzv. benzodiazepinová (BZD) a nebenzodiazepinová (neBZD)
+					vzhledem k hlavnímu rozlišovacímu znaku mezi oběma skupinami, tím je potenciál
+					k rozvoji závislosti. Ten je přítomen u BZD anxiolytik.</p>
+
+					<p class="underline">Benzodiazepinová</p>
+					<p>Kromě rizika závislosti jsou BZD typické u dětí obtížně předvídatelnou
+					paradoxní reakcí. Místo zklidnění přichází neklid. V dětské psychiatrii
+					proto BZD užíváme výjimečně. Obecně známé léky jako Neurol, Frontin, Lexaurin,
+					Diazepam se snažíme v dětské psychiatrii vynechat.</p>
+
+					<p class="underline">Nebenzodiazepinová</p>
+					<p>
+						<ul>
+							<li>Hydroxyzin (Atarax) – Nejužívanější anxiolytikum u dětí a dospívajících
+							pro často velmi dobrý efekt, nenávykovost, malé množství než. účinků (ospalost).</li>
+							<li>Promethazin (Prothazin) – Velmi šetrné anxiolytikum, působí mírně tlumivě,
+							vhodné u nespavosti, která pramení z úzkosti.</li>
+							<li>Levomepromazin (Tisercin) – Lák spadající do skupiny antipsychotik.
+							Má mohutný účinek proti úzkosti s výraznějším (krátkodobým) útlumem.
+							Nemá návykový potenciál. Je velmi vhodný k léčebě masivního neklidu
+							a úzkosti u dětí a dopívajících.</li>
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col psychiatry_item_text" id="psychiatry_row_links">
+							<p>
+								<a href="https://veronikasvobodova.cz/#omne" target="_blank">
+									Mgr. Veronika Svobodova - adiktologicka ambulance
+								</a>
+							</p>
+
+							<p>
+								<a href="www.adehade.cz" target="_blank">
+									ADEHADE - užitečné informace, kontakty, rady a tipy k ADHD
+								</a>
+							</p>
+
+							<p>
+								<a href="www.anabell.cz" target="_blank">
+									Anabell - web o poruchách příjmu potravy
+								</a>
+							</p>
+
+							<p>
+								<a href="www.addp.cz" target="_blank">
+									Asociace dětské a dorostové psychiatrie - nové poznatky ze zdravotnictví, užitečné odkazy a informace
+								</a>
+							</p>
+
+							<p>
+								<a href="https://stacionar.wixsite.com/proadolescenty" target="_blank">
+									Denní stacionář pro adolescenty Praha - zajímavý web o dlouhodobě
+									fungujícím zařízení pro adolescenty s duševní poruchou
+								</a>
+							</p>
+
+							<p>
+								<a href="www.nmskb.cz/pro-pacienty/oddeleni/detoxikacni-centrum" target="_blank">
+									Dětské a dorostové detoxikační centrum - specializované
+									oddělení pro akutní léčbu dětí a mladistvých se závislostí
+								</a>
+							</p>
+
+							<p>
+								<a href="http://hipoterapie.crespo.cz" target="_blank">
+									Hiporehabilitace a canisterapie v Psychiatrické nemocnici Havlíčkův Brod
+								</a>
+							</p>
+
+							<p>
+								<a href="https://www.idealni.cz" target="_blank">
+									Ideální - web o poruchách příjmu potravy
+								</a>
+							</p>
+
+							<p>
+								<a href="www.linkabezpeci.cz" target="_blank">
+									Linka bezpečí
+								</a>
+							</p>
+
+							<p>
+								<a href="www.dr-pothe.com" target="_blank">
+									MUDr. Peter Pöethe - psychiatrická ambulance v Praze, články o psychoterapii dětí
+								</a>
+							</p>
+
+							<p>
+								<a href="www.nntb.cz" target="_blank">
+									NAUTIS - Národní ústav pro autismus - užitečné informace k poruchám autistického spektra
+								</a>
+							</p>
+
+							<p>
+								<a href="www.healthyandfree.cz" target="_blank">
+									O poruchách příjmu potravy
+								</a>
+							</p>
+
+							<p>
+								<a href="http://www.psychologie-psychoterapie.cz/" target="_blank">
+									Petr Sakař, Ph.D. (s motýlkem) - psychologická ambulance v Brně, články o psychoterapii dětí
+								</a>
+							</p>
+
+							<p>
+								<a href="www.autismus.cz" target="_blank">
+									Portál o poruchách autistického spektra
+								</a>
+							</p>
+
+							<p>
+								<a href="www.plhb.cz" target="_blank">
+									Psychiatrická nemocnice Havlíčkův Brod
+								</a>
+							</p>
+
+							<p>
+								<a href="www.firmy.cz/Prvni-pomoc-a-zdravotnictvi/Zdravotnicke-sluzby/Zdravotnicka-zarizeni/Lekarske-ordinace/Psychologicke-a-psychiatricke-ordinace" target="_blank">
+									Vyhledávač psychologických a psychiatrických pracovišť v ČR
+								</a>
+							</p>
+					</div>
+				</div>
+			</div>
 		<div class="col-1"></div>
 	</div>
 	
