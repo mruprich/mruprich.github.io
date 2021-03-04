@@ -448,8 +448,8 @@ nav a.active {
 	font-size: 14px;
 }
 
-.faq_main_row {
-	min-height: 300px;
+#faq_main_row {
+	min-height: 350px;
 }
 
 #faq_picture{
@@ -460,4 +460,25 @@ nav a.active {
 .faq_p {
 	text-align: justify;
 	padding-left: 50px;
+	display: none;
+}
+
+.faq_fa_col {
+	#border: 1px solid red;
+}
+
+.faq_fa {
+	height: 26px;
+	width: 26px;
+	text-align: center;
+	right: 0;
+	position: absolute;
+}
+
+.rotated {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
 }
