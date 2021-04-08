@@ -46,6 +46,15 @@ body h3 {
 	padding-left: 0px;
 }
 
+.navbar {
+	background-color: rgba(255, 104, 107, 1);
+}
+
+.navbar > .container-fluid{
+	justify-content: right;
+	text-align: right;
+}
+
 nav a {
 	font-size: 18px;
 	font-weight: normal;
@@ -69,8 +78,13 @@ nav a:visited {
 }
 
 nav a.active {
-	background: linear-gradient(180deg, rgba(255,104,107,0.8) 50%,  #9fbfff 50%);
+	#background: linear-gradient(180deg, rgba(255,104,107,0.8) 50%,  #9fbfff 50%);
 	font-weight: bold;
+}
+
+nav div.active {
+	border-bottom: 1px solid #9fbfff;
+
 }
 
 .header_empty_row {
