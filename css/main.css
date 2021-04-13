@@ -510,3 +510,7 @@ nav div.active {
 .sponsorship-logo {
 	max-height: 120px;
 }
+
+.list-pad {
+	padding-left: 40px;
+}
