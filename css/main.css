@@ -490,7 +490,7 @@ nav div.active {
 	width: 26px;
 	text-align: center;
 	right: 0;
-	position: absolute;
+	#position: absolute;
 }
 
 .rotated {
