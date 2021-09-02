@@ -4,8 +4,8 @@ title: Home
 ---
 <div class="col-12">
 	<div class="row">
-		<div class="col-1"></div>
-		<div class="col-7">
+		<div class="col-1 d-none d-lg-block"></div>
+		<div class="col-lg-7 col-sm-12">
 			<div class="row page_header">
 				<h1>Náš tým</h1>
 			</div>
@@ -24,8 +24,8 @@ title: Home
 			{% assign loop_count = forloop.index | modulo: 4 %}
 			{% if loop_count == 1 %}
 			<div class="row team_members_row">
-				<div class="col-2"></div>
-				<div class="col-2 text-center team_member_box">
+				<div class="col-2 d-none d-lg-block"></div>
+				<div class="col-lg-2 col-md-6 text-center team_member_box">
 					<div class="team_member_name_div">
 						<p class="team_member_name">{{ team_member.name }}</p>
 					</div>
@@ -35,7 +35,7 @@ title: Home
 					<p class="team_member_position">{{ team_member.position }}</p>
 				</div>
 			{% elsif loop_count == 0 %}
-				<div class="col-2 text-center team_member_box">
+				<div class="col-lg-2 col-md-6 text-center team_member_box">
 					<div class="team_member_name_div">
 						<p class="team_member_name">{{ team_member.name }}
 					</div>
@@ -44,10 +44,10 @@ title: Home
 					</div>
 					<p class="team_member_position">{{ team_member.position }}</p>
 				</div>
-				<div class="col-2"></div>
+				<div class="col-2 d-none d-lg-block"></div>
 			</div>
 			{% else %}
-				<div class="col-2 text-center team_member_box">
+				<div class="col-lg-2 col-md-6 text-center team_member_box">
 					<div class="team_member_name_div">
 						<p class="team_member_name">{{ team_member.name }}
 					</div>
