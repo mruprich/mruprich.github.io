@@ -101,6 +101,10 @@ nav div.active {
 	padding-top: 40px;
 }
 
+#main_content {
+	min-height: 500px;
+}
+
 #main_header {
 	max-width: 1400px;
 	height: 100px;
@@ -513,4 +517,29 @@ nav div.active {
 
 .list-pad {
 	padding-left: 40px;
+}
+
+.gallery_name_div {
+	margin-top: 20px;
+}
+
+.gallery_row {
+	height: 200px;
+}
+
+.gallery_thumbnail {
+	border-radius:5px;
+    object-fit:cover;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+
+}
+
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
 }

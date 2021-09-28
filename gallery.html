@@ -8,7 +8,7 @@ title: Gallery
 		<div class="intro col-lg-12">
 			<h1>Galerie</h1>
 		</div>
-		<div class="col-12" style="border: 1px black solid;">
+		<div class="col-12">
 			{% assign galleries = site.data.gallery %}
 			{% for gallery in galleries %}
 				{% assign loop_count = forloop.index | modulo: 4 %}
@@ -16,31 +16,31 @@ title: Gallery
 					<div class="row gallery_row">
 						<div class="col-2 d-none d-lg-block"></div>
 						<div class="col-lg-2 col-md-6 text-center gallery_div">
+							<div>
+								<img src="{{ gallery.path }}/{{ gallery.thumbnail }}" alt="" class="zoom gallery_thumbnail img-fluid">
+							</div>
 							<div class="gallery_name_div">
 								<p class="gallery_name">{{ gallery.gallery }}</p>
-							</div>
-							<div>
-								<img src="{{ gallery.path }}/{{ gallery.thumbnail }}" alt="" class="gallery_thumbnail img-fluid">
 							</div>
 						</div>
 					{% elsif loop_count == 0 %}
 						<div class="col-lg-2 col-md-6 text-center gallery_box">
+							<div>
+								<img src="{{ gallery.path }}/{{ gallery.thumbnail }}" alt="" class="zoom gallery_thumbnail align-middle img-fluid">
+							</div>
 							<div class="gallery_name_div">
 								<p class="gallery_name">{{ gallery.gallery }}
-							</div>
-							<div>
-								<img src="{{ gallery.path }}/{{ gallery.thumbnail }}" alt="" class="gallery_thumbnail align-middle img-fluid">
 							</div>
 						</div>
 						<div class="col-2 d-none d-lg-block"></div>
 					</div>
 					{% else %}
 						<div class="col-lg-2 col-md-6 text-center gallery_box">
+							<div>
+								<img src="{{ gallery.path }}/{{ gallery.thumbnail }}" alt="" class="zoom gallery_thumbnail align-middle img-fluid">
+							</div>
 							<div class="gallery_name_div">
 								<p class="gallery_name">{{ gallery.gallery }}
-							</div>
-							<div>
-								<img src="{{ gallery.path }}/{{ gallery.thumbnail }}" alt="" class="gallery_thumbnail align-middle img-fluid">
 							</div>
 						</div>
 					{% endif %}

@@ -41,6 +41,15 @@
 		    } // End if
 		  });
 		});
+		$(document).ready(function(){
+    		$(".zoom").hover(function(){
+		
+				$(this).addClass('transition');
+			}, function(){
+        
+				$(this).removeClass('transition');
+			});
+		});
     </script>
 	<!-- Main container that will be the same for all pages -->
 	<div class="container" id="wrapper">
