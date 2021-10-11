@@ -525,25 +525,42 @@ nav div.active {
 
 .gallery_name_div {
 	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.intro {
+	margin-top: 20px;
 }
 
 .gallery_row {
-	height: 200px;
+	min-height: 200px;
 }
 
 .gallery_thumbnail {
-	border-radius:5px;
-    object-fit:cover;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-
+	border-radius: 15px;
+   object-fit:cover;
+   -webkit-transition: all .3s ease-in-out;
+   -moz-transition: all .3s ease-in-out;
+   -o-transition: all .3s ease-in-out;
+   -ms-transition: all .3s ease-in-out;
 }
 
 .transition {
-    -webkit-transform: scale(1.2); 
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
+   -webkit-transform: scale(1.2); 
+   -moz-transform: scale(1.2);
+   -o-transform: scale(1.2);
+   transform: scale(1.2);
+}
+
+.photo-div {
+	height: 150px;
+	display: inline-block;
+	background-size: cover; /* or contain */
+   background-position: center center;
+   background-repeat: no-repeat;
+   border: 2px solid white;
+}
+
+.inner_filling {
+	height: 150px;
 }

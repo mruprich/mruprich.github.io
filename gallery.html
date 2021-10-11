@@ -3,14 +3,30 @@ layout: default
 title: Gallery
 ---
 
-<div class="photo-gallery">
+<div class="main-gallery">
 	<div class="container">
-		<div class="intro col-lg-12">
+		<div class="col-12">
 			<h1>Galerie</h1>
 		</div>
 		<div class="col-12">
 			{% assign galleries = site.data.gallery %}
 			{% for gallery in galleries %}
+				<div class="photo-gallery">
+					<div class="container">
+						<div class="intro">
+							<h2>{{ gallery.gallery }}</h2>
+							<hr class="gallery_hr">
+						</div>
+						<div class="row photos gallery_row">
+							{% for photo in gallery.photos %}
+								<div class="col-sm-6 col-md-4 col-lg-3 item photo-div gallery_thumbnail zoom" style="background-image: url({{ gallery.path }}/{{ photo }});">
+									<a href="{{ gallery.path }}/{{ photo }}" data-lightbox="photos"><div class="inner_filling"></div></a>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			<!--
 				{% assign loop_count = forloop.index | modulo: 4 %}
 				{% if loop_count == 1 %}
 					<div class="row gallery_row">
@@ -43,7 +59,7 @@ title: Gallery
 								<p class="gallery_name">{{ gallery.gallery }}
 							</div>
 						</div>
-					{% endif %}
+					{% endif %}-->
 			{% endfor %}
 		</div>
 	</div>

@@ -1,12 +1,38 @@
 - gallery: Hurá do školy
-  thumbnail: foto01.JPG
   path: /gallery/hura_do_skoly
+  photos:
+    - foto01.JPG
+    - foto02.JPG
+    - foto03.JPG
+    - foto04.JPG
 - gallery: Oddělení
-  thumbnail: foto01.JPG
   path: /gallery/oddeleni
+  photos:
+    - foto01.JPG
+    - foto02.JPG
+    - foto03.JPG
+    - foto04.JPG
+    - foto05.JPG
+    - foto06.JPG
+    - foto07.JPG
+    - foto08.JPG
+    - foto09.JPG
 - gallery: Pracovní terapie
-  thumbnail: foto01.JPG
   path: /gallery/pracovni_terapie
+  photos:
+    - foto01.JPG
+    - foto02.JPG
+    - foto03.JPG
+    - foto04.JPG
+    - foto05.JPG
+    - foto06.JPG
+    - foto07.JPG
+    - foto08.JPG
+    - foto09.JPG
 - gallery: Teepee
-  thumbnail: foto01.JPG
   path: /gallery/teepee
+  photos:
+    - foto01.JPG
+    - foto02.JPG
+    - foto03.JPG
+    - foto04.JPG
