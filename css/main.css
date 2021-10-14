@@ -91,6 +91,7 @@ nav div.active {
 
 }
 
+
 .header_empty_row {
 	height: 46px;
 	#border: 1px solid green;
@@ -107,7 +108,7 @@ nav div.active {
 
 #main_header {
 	max-width: 1400px;
-	height: 100px;
+	min-height: 100px;
 	background-color: rgba(255, 104, 107, 1);
 	#border: 1px black solid;
 }
