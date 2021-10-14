@@ -104,6 +104,7 @@ nav div.active {
 
 #main_content {
 	min-height: 500px;
+	height: auto;
 }
 
 #main_header {
@@ -206,7 +207,7 @@ nav div.active {
 
 #intro {
 	max-width: 1400px;
-	height: 500px;
+	min-height: 500px;
 	background-color: rgba(255, 104, 107, 0.8);
 }
 
@@ -263,8 +264,8 @@ nav div.active {
 	color: white;
 }
 
-#news {
-	height: 500px;
+.news {
+	min-height: 500px;
 }
 
 .news_item {
@@ -315,7 +316,8 @@ nav div.active {
 }
 
 .psychiatry_row {
-	height: 350px;
+	min-height: 350px;
+	padding-bottom: 10px;
 }
 
 .psychiatry_item {
