@@ -149,12 +149,13 @@ nav div.active {
 
 
 #footer {
-	height: 256px;
+	max-height: 256px;
 	max-width: 1400px;
 	#background-color: #9fbfff;
 	background-image: url('{{ site.baseurl }}/images/vlnkasvg.svg');
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	#background-size: 100% 100%;
+	background-size: cover;
 }
 
 .footer_elements {
@@ -389,7 +390,7 @@ nav div.active {
 
 #contacts {
 	max-width: 1400px;
-	height: 500px;
+	min-height: 500px;
 	padding-top: 50px;
 	font-family: Roboto;
 	font-size: 24px;
