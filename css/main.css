@@ -95,12 +95,15 @@ nav div.active {
 
 .header_empty_row {
 	height: 46px;
-	#border: 1px solid green;
 	background-color: rgba(255, 104, 107, 1);
 }
 
 .page_header {
 	padding-top: 40px;
+}
+
+.last_row {
+	margin-bottom: 50px;
 }
 
 #main_content {
@@ -154,7 +157,7 @@ nav div.active {
 	background-repeat: no-repeat;
 	#background-size: 100% 100%;
 	background-size: cover;
-	margin-top: 50px;
+	
 }
 
 .footer_elements {
