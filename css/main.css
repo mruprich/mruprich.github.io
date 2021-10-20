@@ -56,6 +56,10 @@ body h3 {
 	text-align: right;
 }
 
+.colored_row {
+	background-color: rgba(226, 160, 255, 0.3);
+}
+
 nav a {
 	font-size: 18px;
 	font-weight: normal;
@@ -150,6 +154,7 @@ nav div.active {
 	background-repeat: no-repeat;
 	#background-size: 100% 100%;
 	background-size: cover;
+	margin-top: 50px;
 }
 
 .footer_elements {
@@ -307,7 +312,6 @@ nav div.active {
 
 #psychiatry {
 	min-height: 845px;
-	background-color: rgba(226, 160, 255, 0.3);
 }
 
 #psychiatry p {

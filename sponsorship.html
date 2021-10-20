@@ -2,15 +2,11 @@
 layout: default
 title: Sponsorship
 ---
-
-<div class="col-1"></div>
-<div class="col-10">
+<div class="col-12 col-sm-12">
 	<div class="row">
-		<h1>Sponzoring</h1>
-	</div>
-	
-	<div class="row">
-		<div class="col-7">
+		<div class="col-lg-1 d-none d-lg-block"></div>
+		<div class="col-md-5 col-12">
+			<h1>Sponzoring</h1>
 			<p>
 				Pomocí sponzorských aktivit především zpříjemňujeme dětem jejich pobyt na oddělení.
 			</p>
@@ -28,36 +24,40 @@ title: Sponsorship
 				naši aktivitu podporuje a ocení i někdo mimo obor.
 			</p>
 		</div>
-		<div class="col-5" id="sponsorship_img">
+		<div class="col-md-6 d-none d-md-block" id="sponsorship_img">
+		</div>
+	</div>
+	<div class="row colored_row">
+		<div class="col-lg-1 d-none d-lg-block"></div>
+		<div class="col-sm-12 col-lg-11">
+			<h2>Co oceníme?</h2>
+	 		<ul class="list-pad">
+	    		<li>výtvarné potřeby - papíry, pastelky, fixy, omalovánky, vysřihovánky, plastelína... (máme neuvěřitelnou spotřebu!)</li>
+	    		<li>sportovní potřeby - míče, míčky, pálky, hokejky na florbal, koloběžky, hrazdy, vybavení na posilování...</li>
+	    		<li>hračky a společenské hry - co fantazie přinese na mysl</li>
+	    		<li>ceny do soutěží - plyšáci, drobné hračky, laskominy... (stále si hrajeme, stále soutěžíme a tak jsou ceny stále potřeba)</li>
+	    		<li>nábytek - sedací pytle, skříňky pro děti (skříní je dostatek, ale rádi bychom některé vyměnili za nové, aby se zde děti cítily ještě lépe)</li>
+	    		<li>stolní fotbal (sen naší staniční sestry)</li>
+	    		<li>doplnění stávajícího hřiště o další atrakce</li>
+	    		<li>workout hřiště (sen naší staniční sestry)</li>
+	    		<li>čaje (děti si velmi rády vaří čaj k veřernímu promítání v ateliéru)</li>
+			</ul>
+			
+			<p>Od července 2020 sponzorské dary prezentujeme na našem FB - <a href="www.facebook.com/detskePNHB">www.facebook.com/detskePNHB</a>, děkujeme.</p>
 		</div>
 	</div>
 	<div class="row">
-		<h2>Co oceníme?</h2>
- 		<ul class="list-pad">
-    		<li>výtvarné potřeby - papíry, pastelky, fixy, omalovánky, vysřihovánky, plastelína... (máme neuvěřitelnou spotřebu!)</li>
-    		<li>sportovní potřeby - míče, míčky, pálky, hokejky na florbal, koloběžky, hrazdy, vybavení na posilování...</li>
-    		<li>hračky a společenské hry - co fantazie přinese na mysl</li>
-    		<li>ceny do soutěží - plyšáci, drobné hračky, laskominy... (stále si hrajeme, stále soutěžíme a tak jsou ceny stále potřeba)</li>
-    		<li>nábytek - sedací pytle, skříňky pro děti (skříní je dostatek, ale rádi bychom některé vyměnili za nové, aby se zde děti cítily ještě lépe)</li>
-    		<li>stolní fotbal (sen naší staniční sestry)</li>
-    		<li>doplnění stávajícího hřiště o další atrakce</li>
-    		<li>workout hřiště (sen naší staniční sestry)</li>
-    		<li>čaje (děti si velmi rády vaří čaj k veřernímu promítání v ateliéru)</li>
-		</ul>
-		
-		<p>Od července 2020 sponzorské dary prezentujeme na našem FB - <a href="www.facebook.com/detskePNHB">www.facebook.com/detskePNHB</a>, děkujeme.</p>
-	</div>
-	<div class="row">
-		<h2>Kdo nám pomáhá</h2><br>
-		<div class="col-12">
-			{% assign sponsorship-all = site.data.sponsorship %}
-			{% for sponsor in sponsorship-all %}
-				<div class="row">
-					<div style="max-height: 100px;"><img src="{{ sponsor.picture }}" height="100"; alt=""></div><p>{{ sponsor.text }}</p><a href="{{ sponsor.link }}" >{{ sponsor.link }}</a>
-				</div>
-			{% endfor %}
+		<div class="col-lg-1 d-none d-lg-block"></div>
+		<div class="col-sm-12 col-lg-11">
+			<h2>Kdo nám pomáhá</h2><br>
+			<div class="col-12">
+				{% assign sponsorship-all = site.data.sponsorship %}
+				{% for sponsor in sponsorship-all %}
+					<div class="row">
+						<div style="max-height: 100px;"><img src="{{ sponsor.picture }}" height="100"; alt=""></div><p>{{ sponsor.text }}</p><a href="{{ sponsor.link }}" >{{ sponsor.link }}</a>
+					</div>
+				{% endfor %}
+			</div>
 		</div>
 	</div>
 </div>
-
-<div class="col-1"></div>
