@@ -43,7 +43,7 @@ title: Sponsorship
 	    		<li>čaje (děti si velmi rády vaří čaj k veřernímu promítání v ateliéru)</li>
 			</ul>
 			
-			<p>Od července 2020 sponzorské dary prezentujeme na našem FB - <a href="www.facebook.com/detskePNHB">www.facebook.com/detskePNHB</a>, děkujeme.</p>
+			<p>Od července 2020 sponzorské dary prezentujeme na našem FB - <a href="https://www.facebook.com/detskePNHB">www.facebook.com/detskePNHB</a>, děkujeme.</p>
 		</div>
 	</div>
 	<div class="row last_row">
@@ -53,9 +53,32 @@ title: Sponsorship
 			<div class="col-12">
 				{% assign sponsorship-all = site.data.sponsorship %}
 				{% for sponsor in sponsorship-all %}
-					<div class="row">
-						<div style="max-height: 100px;"><img src="{{ sponsor.picture }}" height="100"; alt=""></div><p>{{ sponsor.text }}</p><a href="{{ sponsor.link }}" >{{ sponsor.link }}</a>
-					</div>
+					{% assign loop_count = forloop.index | modulo: 2 %}
+						{% if loop_count == 1 %}
+							<div class="row sponsorship_row">
+								<div class="col-12 col-sm-12 col-md-6" style="max-height: 100px;">
+									<div class="row">
+										<div class="col-6 col-sm-6">
+											<a href="{{ sponsor.link }}" ><img src="{{ sponsor.picture }}" alt="{{ sponsor.text }}" title="{{ sponsor.text }}" class="sponsorship_img"  height="100px" ></a>
+										</div>
+										<div class="col-6 col-sm-6">
+											
+										</div>
+									</div>
+								</div>
+						{% else %}
+								<div class="col-12 col-sm-12 col-md-6" style="max-height: 100px;">
+									<div class="row">
+										<div class="col-6 col-sm-6">
+											<a href="{{ sponsor.link }}" ><img src="{{ sponsor.picture }}" height="100px" alt="{{ sponsor.text }}" title="{{ sponsor.text }}"  class="sponsorship_img"></a>
+										</div>
+										<div class="col-6 col-sm-6">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						{% endif %}
 				{% endfor %}
 			</div>
 		</div>

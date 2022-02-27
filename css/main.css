@@ -61,7 +61,7 @@ body h3 {
 }
 
 nav a {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: normal;
 	font-style: normal;
 	line-height: 25px;
@@ -91,7 +91,6 @@ nav div.active {
 	border-bottom: 1px solid #9fbfff;
 
 }
-
 
 .header_empty_row {
 	height: 46px;
@@ -584,4 +583,13 @@ nav div.active {
 
 .inner_filling {
 	height: 150px;
+}
+
+.sponsorship_img {
+	float: left;
+	max-width: 300px;
+}
+
+.sponsorship_row {
+	margin-bottom: 15px;
 }
