@@ -10,12 +10,13 @@ body a {
 
 body p{
 	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
+	text-align: center;
 }
 
 body h1 {
 	font-family: Roboto;
-	font-size: 56px;
+	font-size: 30px;
 	font-weight: bold;
 }
 
@@ -48,7 +49,7 @@ body h3 {
 }
 
 .navbar {
-	background-color: rgba(255, 104, 107, 1);
+	background-color: rgba(255, 104, 107, 0);
 }
 
 .navbar > .container-fluid{
@@ -58,6 +59,10 @@ body h3 {
 
 .colored_row {
 	background-color: rgba(226, 160, 255, 0.3);
+}
+
+.top_margin {
+	margin-top: 80px;
 }
 
 nav a {
@@ -94,7 +99,7 @@ nav div.active {
 
 .header_empty_row {
 	height: 46px;
-	background-color: rgba(255, 104, 107, 1);
+	background-color: rgba(255, 104, 107, 0.8);
 }
 
 .page_header {
@@ -111,7 +116,7 @@ nav div.active {
 
 #main_header {
 	min-height: 100px;
-	background-color: rgba(255, 104, 107, 1);
+	background-color: rgba(255, 104, 107, 0.8);
 	#border: 1px black solid;
 }
 
@@ -216,12 +221,12 @@ nav div.active {
 }
 
 #intro h1 {
-	font-size: 60px;
-	line-height: 78px;
+	font-size: 50px;
+	line-height: 60px;
 }
 
 #intro h2 {
-	font-size: 30px;
+	font-size: 25px;
 	line-height: 34px;
 	margin-top: 30px;
 	padding-left: 40px;
@@ -229,7 +234,7 @@ nav div.active {
 
 #intro_pic {
 	background-image: url('{{ site.baseurl }}/images/ouch.jpg');
-	background-size: 60% 100%;
+	background-size: 50% 100%;
 	min-height: 450px;
 	background-repeat: no-repeat;
 	background-position: right center;
